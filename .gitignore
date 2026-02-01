@@ -86,5 +86,8 @@ credentials.json
 
 
 # ============== 其他通用规则 ==============
+karabiner/automatic_backups/*
+
+
 # 排除空目录标记（如需跟踪空目录，可保留 .gitkeep）
 !.gitkeep
