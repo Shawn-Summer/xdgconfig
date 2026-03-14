@@ -26,29 +26,22 @@ local spec = {
   { import = "basic/nvim-lspconfig" },
 }
 
-vim.g.old_version = (os.getenv("SSH_IDENTITY") == "xxl")
--- 2. 根据 vim.g.old_version 条件追加导入
-if vim.g.old_version == true then
-  table.insert(spec, { import = "lazyvim.plugins.extras.lang.python" })
-  table.insert(spec, { import = "old_version" })
-else
-  table.insert(spec, { import = "lazyvim.plugins.extras.lang.python" })
-  table.insert(spec, { import = "lazyvim.plugins.extras.lang.tex" })
-  table.insert(spec, { import = "lazyvim.plugins.extras.lang.git" })
-  table.insert(spec, { import = "lazyvim.plugins.extras.lang.clangd" })
-  table.insert(spec, { import = "lazyvim.plugins.extras.lang.json" })
-  table.insert(spec, { import = "lazyvim.plugins.extras.lang.yaml" })
-  table.insert(spec, { import = "lazyvim.plugins.extras.lang.toml" })
-  table.insert(spec, { import = "lazyvim.plugins.extras.lang.docker" })
-  table.insert(spec, { import = "lazyvim.plugins.extras.coding.yanky" })
-  table.insert(spec, { import = "lazyvim.plugins.extras.ui.smear-cursor"})
-  table.insert(spec, { import = "lazyvim.plugins.extras.formatting.black" })
-  table.insert(spec, { import = "lazyvim.plugins.extras.formatting.biome" })
-  table.insert(spec, { import = "lazyvim.plugins.extras.util.mini-hipatterns"})
-  table.insert(spec, { import = "lazyvim.plugins.extras.util.startuptime"})
-  table.insert(spec, { import = "lazyvim.plugins.extras.vscode"})
-  table.insert(spec, { import = "plugins" })
-end
+table.insert(spec, { import = "lazyvim.plugins.extras.lang.python" })
+-- table.insert(spec, { import = "lazyvim.plugins.extras.lang.tex" })
+table.insert(spec, { import = "lazyvim.plugins.extras.lang.git" })
+table.insert(spec, { import = "lazyvim.plugins.extras.lang.clangd" })
+table.insert(spec, { import = "lazyvim.plugins.extras.lang.json" })
+table.insert(spec, { import = "lazyvim.plugins.extras.lang.yaml" })
+table.insert(spec, { import = "lazyvim.plugins.extras.lang.toml" })
+table.insert(spec, { import = "lazyvim.plugins.extras.lang.docker" })
+table.insert(spec, { import = "lazyvim.plugins.extras.coding.yanky" })
+table.insert(spec, { import = "lazyvim.plugins.extras.ui.smear-cursor"})
+table.insert(spec, { import = "lazyvim.plugins.extras.formatting.black" })
+table.insert(spec, { import = "lazyvim.plugins.extras.formatting.biome" })
+table.insert(spec, { import = "lazyvim.plugins.extras.util.mini-hipatterns"})
+table.insert(spec, { import = "lazyvim.plugins.extras.util.startuptime"})
+-- table.insert(spec, { import = "lazyvim.plugins.extras.vscode"})
+table.insert(spec, { import = "plugins" })
 
 require("lazy").setup({
   spec = spec,

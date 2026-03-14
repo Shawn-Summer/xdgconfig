@@ -27,3 +27,7 @@ vim.api.nvim_create_user_command("FormatOnSaveToggle", function()
   local status = vim.g.format_on_save and "enabled" or "disabled"
   vim.notify("Format on save " .. status, vim.log.levels.INFO)
 end, { desc = "Toggle format on save" })
+
+--  项目本地配置
+vim.o.exrc = true      -- 允许加载本地 .nvim.lua 或 .nvimrc
+vim.o.secure = false    -- 安全模式（推荐）：禁止本地配置中的自动命令等危险操作
