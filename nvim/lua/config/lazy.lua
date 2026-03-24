@@ -35,11 +35,11 @@ table.insert(spec, { import = "lazyvim.plugins.extras.lang.yaml" })
 table.insert(spec, { import = "lazyvim.plugins.extras.lang.toml" })
 table.insert(spec, { import = "lazyvim.plugins.extras.lang.docker" })
 table.insert(spec, { import = "lazyvim.plugins.extras.coding.yanky" })
-table.insert(spec, { import = "lazyvim.plugins.extras.ui.smear-cursor"})
+table.insert(spec, { import = "lazyvim.plugins.extras.ui.smear-cursor" })
 table.insert(spec, { import = "lazyvim.plugins.extras.formatting.black" })
 table.insert(spec, { import = "lazyvim.plugins.extras.formatting.biome" })
-table.insert(spec, { import = "lazyvim.plugins.extras.util.mini-hipatterns"})
-table.insert(spec, { import = "lazyvim.plugins.extras.util.startuptime"})
+table.insert(spec, { import = "lazyvim.plugins.extras.util.mini-hipatterns" })
+table.insert(spec, { import = "lazyvim.plugins.extras.util.startuptime" })
 -- table.insert(spec, { import = "lazyvim.plugins.extras.vscode"})
 table.insert(spec, { import = "plugins" })
 
@@ -74,7 +74,7 @@ require("lazy").setup({
       },
     },
   },
- 
+
   -- 网络控制相关
   git = {
     -- 网络节流控制 单位时间内的 Git 网络操作次数(这里是 5秒 2次)

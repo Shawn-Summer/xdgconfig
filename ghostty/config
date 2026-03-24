@@ -1,13 +1,39 @@
+auto-update = off
+
+# apperance
+theme = light:Catppuccin Latte,dark:Catppuccin Mocha
+
 font-family = "Maple Mono NF CN Regular"
 font-style-bold="Maple Mono NF CN Bold"
 font-style-bold-italic = "Maple Mono NF CN Bold ItalicMaple"
 font-style-italic ="Maple Mono NF CN Italic"
 font-size=12
-theme = TokyoNight
-background-opacity=0.5
+font-thicken = true
+
+background-opacity=0.6
+background-opacity-cells = true
 background-blur = true
-term = xterm-256color
-cursor-style = bar
-auto-update = off
-macos-titlebar-style = tabs
+macos-titlebar-style = tabs 
 macos-icon = holographic
+
+cursor-style = bar
+cursor-style-blink = true
+
+window-padding-x = 4
+window-padding-y = 4
+
+# recover the state 
+window-save-state = always
+window-inherit-working-directory = true
+window-inherit-font-size = true
+
+# select auto copy to system clipboard
+copy-on-select = clipboard
+
+# never confirm
+confirm-close-surface = false
+# shell-integration
+shell-integration = detect
+## copy local terminfo into the remote host
+shell-integration-features = ssh-terminfo,ssh-env
+
