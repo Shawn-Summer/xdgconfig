@@ -19,8 +19,8 @@ macos-icon = holographic
 cursor-style = bar
 cursor-style-blink = true
 
-window-padding-x = 4
-window-padding-y = 4
+window-padding-x = 0
+window-padding-y = 0
 
 # recover the state 
 window-save-state = always
@@ -37,3 +37,7 @@ shell-integration = detect
 ## copy local terminfo into the remote host
 shell-integration-features = ssh-terminfo,ssh-env
 
+# shader
+
+custom-shader = ./shaders/cursor_blaze.glsl
+custom-shader-animation = true 
