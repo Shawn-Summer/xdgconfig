@@ -5,7 +5,7 @@ theme = light:Catppuccin Latte,dark:Catppuccin Mocha
 
 font-family = "Maple Mono NF CN Regular"
 font-style-bold="Maple Mono NF CN Bold"
-font-style-bold-italic = "Maple Mono NF CN Bold ItalicMaple"
+font-style-bold-italic = "Maple Mono NF CN Bold Italic"
 font-style-italic ="Maple Mono NF CN Italic"
 font-size=12
 font-thicken = true
@@ -18,12 +18,10 @@ macos-icon = holographic
 
 cursor-style = bar
 cursor-style-blink = true
-
-window-padding-x = 0
-window-padding-y = 0
+cursor-click-to-move = true
 
 # recover the state 
-window-save-state = always
+window-save-state = default
 window-inherit-working-directory = true
 window-inherit-font-size = true
 
@@ -40,4 +38,5 @@ shell-integration-features = ssh-terminfo,ssh-env
 # shader
 
 custom-shader = ./shaders/cursor_blaze.glsl
+# custom-shader = ./shaders/myshader1.glsl
 custom-shader-animation = true 
