@@ -1,7 +1,8 @@
 auto-update = off
 
 # apperance
-theme = light:Catppuccin Latte,dark:Catppuccin Mocha
+#theme = light:Catppuccin Latte,dark:Catppuccin Mocha
+theme = Catppuccin Mocha
 
 font-family = "Maple Mono NF CN Regular"
 font-style-bold="Maple Mono NF CN Bold"
@@ -10,18 +11,21 @@ font-style-italic ="Maple Mono NF CN Italic"
 font-size=12
 font-thicken = true
 
-background-opacity=0.6
+background-opacity=0.9
 background-opacity-cells = true
 background-blur = true
-macos-titlebar-style = tabs 
-macos-icon = holographic
+#macos-titlebar-style = tabs 
+#macos-icon = holographic
 
 cursor-style = bar
 cursor-style-blink = true
 cursor-click-to-move = true
 
+# mouse event
+mouse-reporting = true 
+
 # recover the state 
-window-save-state = default
+window-save-state = always
 window-inherit-working-directory = true
 window-inherit-font-size = true
 
@@ -30,13 +34,15 @@ copy-on-select = clipboard
 
 # never confirm
 confirm-close-surface = false
+
 # shell-integration
-shell-integration = detect
+# i inject shell-integration manually
+shell-integration = none 
+
 ## copy local terminfo into the remote host
 shell-integration-features = ssh-terminfo,ssh-env
 
 # shader
-
 custom-shader = ./shaders/cursor_blaze.glsl
 # custom-shader = ./shaders/myshader1.glsl
 custom-shader-animation = true 
